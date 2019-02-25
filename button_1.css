@@ -1,0 +1,76 @@
+.button-1{
+  width: 150px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Work Sans';
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  color: purple;
+}
+
+.button-1 span{
+  position: absolute;
+}
+
+.button-1 svg{
+  overflow: visible;
+}
+
+.button-1 path{
+  -webkit-transition-duration: .3s;
+       -o-transition-duration: .3s;
+          transition-duration: .3s;
+  fill: none;
+  stroke: purple;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.button-1 .vertical{
+  stroke-width: 1.5px;
+}
+
+.button-1 .horizontal{
+  stroke-width: 4px;
+}
+
+.button-1:hover .top{
+  d: path('m0,0 s50,-15 100,0');
+}
+
+.button-1:hover .bottom{
+  d: path('m0,100 s50,15 100,0');
+}
+
+.button-1:hover .left{
+  d: path('m-1.5,0 s-4,50 0,100');
+}
+
+.button-1:hover .right{
+  d: path('m101.5,0 s4,50 0,100');
+}
+
+.button-1:active .top{
+  d: path('m0,0 s50,15 100,0');
+}
+
+.button-1:active .bottom{
+  d: path('m0,100 s50,-15 100,0');
+}
+
+.button-1:active .left{
+  d: path('m-1.5,0 s4,50 0,100');
+}
+
+.button-1:active .right{
+  d: path('m101.5,0 s-4,50 0,100');
+}
