@@ -1,0 +1,41 @@
+
+.button-2{
+  width: 260px;
+  height: 50px;
+  background-color: #f9ebf7;
+  border-radius: 1000px;
+  transition: transform .3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.button-2 svg{
+  border-radius: 1000px;
+}
+
+.button-2 span{
+  position: absolute;
+}
+
+.button-2:hover{
+  transform: scale(1.03,1.06);
+}
+
+@keyframes pop{
+  0%{
+    r: 0;
+  }
+  100%{
+    r: 150;
+  }
+}
+
+.button-2-animation{
+  animation: pop;
+  animation-duration: .3s;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+}
