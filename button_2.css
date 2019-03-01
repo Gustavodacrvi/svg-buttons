@@ -27,9 +27,11 @@
 @keyframes pop{
   0%{
     r: 0;
+    opacity: 1;
   }
   100%{
     r: 150;
+    opacity: .4;
   }
 }
 
